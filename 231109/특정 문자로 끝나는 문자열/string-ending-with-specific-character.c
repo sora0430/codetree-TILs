@@ -12,8 +12,10 @@ int main() {
     int v = 0;
     for(i=0;i<10;i++) {
         int j = strlen(s[i]);
-        if(s[i][j-1] == c) printf("%s\n", s[i]);
-        v = 1;
+        if(s[i][j-1] == c) {
+            printf("%s\n", s[i]);
+            v = 1;
+        }
     }
     if(v == 0) printf("None");
     return 0;
