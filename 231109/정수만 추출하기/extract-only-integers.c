@@ -6,7 +6,7 @@ int main() {
     int i, j, k;
     int sum = 0;
     for(i=0;i<2;i++) {
-        for(j=0;j<8;j++){
+        for(j=0;j<9;j++){
             if(!('0'<=c[i][j]&&c[i][j]<='9')) {
                 int temp = 0;
                 for(k=0;k<j;k++) {
