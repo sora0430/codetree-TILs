@@ -6,7 +6,7 @@ int main() {
     int m = 1;
     scanf("%lld", &n);
     while(n > 0) {
-        int temp = n%10;
+        long long temp = n%10;
         r += temp*m;
         m*=2;
         n/=10;
