@@ -1,5 +1,9 @@
 #include <stdio.h>
-
+int swap(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
 int main() {
     int arr[100];
     int n;
@@ -11,9 +15,7 @@ int main() {
     for(i=0;i<n-1;i++) {
         for(j=i+1;j<n;j++) {
             if(arr[i]>arr[j]){
-                int temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
+                swap(&arr[i], &arr[j]);
             }
         }
     }
