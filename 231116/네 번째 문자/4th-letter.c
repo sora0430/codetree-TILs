@@ -5,7 +5,7 @@ int main() {
     char alpha;
     scanf("%d %c", &n, &alpha);
     int i;
-    char str[20][20];
+    char str[20][21];
     int valid[20] = {0, };
     int cnt = 0;
     for(i=0;i<n;i++) {
