@@ -5,7 +5,7 @@ int main() {
     int n, q;
     int *arr;
     scanf("%d %d", &n, &q);
-    arr = (int *)malloc(sizeof(int)*q);
+    arr = (int *)malloc(sizeof(int)*q+1);
     int i;
 
     for(i=0;i<n;i++) {
@@ -25,7 +25,10 @@ int main() {
             case 2:
                 scanf("%d", &a);
                 for(j=0;j<n;j++) {
-                    if(arr[j]==a) printf("%d\n", j+1);
+                    if(arr[j]==a) {
+                        printf("%d\n", j+1);
+                        break;
+                    }
                 }
                 break;
             case 3:
