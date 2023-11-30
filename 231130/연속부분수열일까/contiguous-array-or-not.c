@@ -16,17 +16,15 @@ int main() {
     }
     
     int valid = 0;
-    int j, k;
+    int j;
     for(i=0;i<l1;i++) {
-        for(j=0;j<l2;j++) {
-            if(n1[i]==n2[j]) {
-                if(n1-i<n2-j) break;
-                valid = 1;
-                for(k=0;n2-j;k++) {
-                    if(n1[k+i]!=n2[k+j]) {
-                        valid = 0;
-                        break;
-                    }
+        if(n1[i]==n2[0]) {
+            if(l1-i<l2) break;
+            valid = 1;
+            for(j=1;j<=l2;j++) {
+                if(n1[i+j]!=n2[j]) {
+                    valid = 0;
+                    break;
                 }
             }
         }
