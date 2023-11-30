@@ -37,5 +37,7 @@ int main() {
                 break;
         }
     }
+    free(arr);
+    arr = NULL;
     return 0;
 }
