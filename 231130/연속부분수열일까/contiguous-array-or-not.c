@@ -21,7 +21,7 @@ int main() {
         if(n1[i]==n2[0]) {
             if(l1-i<l2) break;
             valid = 1;
-            for(j=1;j<=l2;j++) {
+            for(j=1;j<l2;j++) {
                 if(n1[i+j]!=n2[j]) {
                     valid = 0;
                     break;
