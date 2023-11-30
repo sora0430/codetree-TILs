@@ -3,7 +3,9 @@
 
 int main() {
     int n, q;
-    int *arr = NULL;
+    int *arr;
+    free(arr);
+    arr = NULL;
     scanf("%d %d", &n, &q);
     arr = (int *)malloc(sizeof(int)*q);
     int i;
