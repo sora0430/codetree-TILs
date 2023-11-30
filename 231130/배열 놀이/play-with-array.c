@@ -6,7 +6,7 @@ int main() {
     int *arr;
 
     scanf("%d %d", &n, &q);
-    arr = (int *)malloc(sizeof(int)*q);
+    arr = (int *)malloc(sizeof(int)*n);
     int i;
 
     for(i=0;i<n;i++) {
