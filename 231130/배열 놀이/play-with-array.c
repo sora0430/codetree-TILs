@@ -4,7 +4,8 @@
 int main() {
     int n, q;
     int *arr;
-
+    free(arr);
+    arr = NULL;
     scanf("%d %d", &n, &q);
     arr = (int *)malloc(sizeof(int)*q);
     int i;
@@ -14,7 +15,7 @@ int main() {
     }
 
     int j;
-    for(i=0;i<n;i++) {
+    for(i=0;i<q;i++) {
         int qType;
         int a, b;
         scanf("%d", &qType);
@@ -41,5 +42,7 @@ int main() {
                 break;
         }
     }
+    free(arr);
+    arr = NULL;
     return 0;
 }
