@@ -3,9 +3,9 @@
 
 int main() {
     int n, q;
-    long int *arr;
+    int *arr = NULL;
     scanf("%d %d", &n, &q);
-    arr = (long int *)malloc(sizeof(long int)*q);
+    arr = (int *)malloc(sizeof(int)*q);
     int i;
 
     for(i=0;i<n;i++) {
