@@ -31,6 +31,7 @@ int main() {
                         break;
                     }
                 }
+                if(j==n) printf("0\n");
                 break;
             case 3:
                 scanf("%d %d", &a, &b);
@@ -42,5 +43,6 @@ int main() {
         }
     }
     free(arr);
+    arr = NULL;
     return 0;
 }
