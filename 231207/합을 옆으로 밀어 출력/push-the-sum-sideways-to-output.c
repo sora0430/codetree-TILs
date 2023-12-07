@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main() {
-    int n, i, arr[100], temp, sum = 0;
+    int n, i, arr[6], temp, sum = 0;
     scanf("%d", &n);
     for(i=0;i<n;i++) {
         scanf("%d", &temp);
